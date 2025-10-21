@@ -1,0 +1,5 @@
+*.sh linguist-language=Bash
+*.xsh linguist-language=Xonsh
+*.json linguist-language=JSON
+*.jsonc linguist-language=JSON
+*.nix linguist-language=Nix
