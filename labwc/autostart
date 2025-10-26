@@ -1,5 +1,4 @@
-wlr-randr --output eDP-1 --transform 90
 
 swaync &
 
-~/nix/Nix-rice-modules/waybar/main.sh
+/opt/nix-modules/waybar/main.sh
