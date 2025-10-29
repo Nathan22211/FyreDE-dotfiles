@@ -1,0 +1,43 @@
+# wofi configuration to match waybar theme
+
+# General settings
+width=600
+height=400
+location=center
+anchor=center
+x-offset=0
+y-offset=0
+
+# Appearance
+allow_markup=true
+no_actions=false
+hide_scroll=true
+line_wrap=true
+insensitive=true
+
+# Behavior
+allow_images=true
+image_size=40
+gtk_dark=true
+sort_order=alphabetical
+fork=false
+
+# Key bindings
+key_expand=Tab
+key_exit=Escape
+key_clear=Control+l
+key_remove_word=Control+BackSpace
+
+# Search
+case_sensitive=false
+insensitive=true
+sort_order=alphabetical
+
+# Icons
+show_images=true
+image_size=40
+
+# Colors and styling will be handled by style.css
+
+# Terminal for apps that require it (can be overridden by TERMINAL env var)
+term=alacritty

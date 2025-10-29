@@ -1,0 +1,176 @@
+/* wofi style.css - matching waybar theme */
+
+/* Color definitions matching waybar */
+@define-color background #2C2A24;
+@define-color second-background #3A372F;
+@define-color text #DDD5C4;
+@define-color borders #A0907A;
+@define-color focused #D08B57;
+@define-color focused2 #BFAA80;
+@define-color color1 #7699A3;
+@define-color color2 #8D7AAE;
+@define-color color3 #78997A;
+@define-color urgent #B05A5A;
+
+/* Main window */
+window {
+    margin: 0px;
+    border: 2px solid @focused;
+    border-radius: 5px;
+    background-color: @background;
+    font-family: "Iosevka Nerd Font", monospace;
+    font-size: 15px;
+}
+
+/* Input box */
+#input {
+    margin: 5px;
+    border: 2px solid @focused;
+    border-radius: 5px;
+    color: @text;
+    background-color: @second-background;
+    font-size: 15px;
+    padding: 8px;
+}
+
+#input:focus {
+    border-color: @color1;
+}
+
+/* Scrollable list */
+#scroll {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+#scroll:focus {
+    border: none;
+}
+
+/* List items */
+#inner-box {
+    margin: 5px;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Individual entries */
+#entry {
+    padding: 8px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: @text;
+    border: none;
+}
+
+#entry:selected {
+    background-color: @second-background;
+    border: 1px solid @focused;
+    color: @text;
+}
+
+#entry:selected #text {
+    color: @text;
+}
+
+/* Text styling */
+#text {
+    color: @text;
+    font-size: 15px;
+}
+
+#text:selected {
+    color: @text;
+}
+
+/* Icon styling */
+#img {
+    margin-right: 10px;
+}
+
+#img:selected {
+    background-color: transparent;
+}
+
+/* Unselected entries on hover */
+#entry:hover {
+    background-color: @second-background;
+    border: 1px solid @color1;
+}
+
+/* Selected entry text */
+#entry:selected #text {
+    color: @focused2;
+}
+
+/* Input placeholder text */
+#input > * {
+    color: @text;
+}
+
+/* Selected entry icon */
+#entry:selected #img {
+    background-color: transparent;
+}
+
+/* Unselected entry hover */
+#entry:not(:selected):hover {
+    background-color: @second-background;
+    border: 1px solid @color1;
+}
+
+/* Focused input styling */
+#input:focus {
+    border-color: @color1;
+    box-shadow: 0 0 0 1px @color1;
+}
+
+/* Scrollbar styling */
+#scroll {
+    border: none;
+}
+
+/* Remove default focus outline */
+#entry:focus {
+    outline: none;
+}
+
+/* Match waybar's rounded corners and spacing */
+#outer-box {
+    margin: 0px;
+    padding: 5px;
+}
+
+#inner-box {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Ensure proper spacing between entries */
+#entry {
+    margin: 1px 0px;
+}
+
+/* Match waybar's hover effects */
+#entry:hover:not(:selected) {
+    background-color: @second-background;
+    border: 1px solid @color1;
+    color: @text;
+}
+
+/* Selected state with waybar's focused color */
+#entry:selected {
+    background-color: @second-background;
+    border: 1px solid @focused;
+    color: @focused2;
+}

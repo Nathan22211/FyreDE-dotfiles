@@ -1,0 +1,10 @@
+# wofi menu configuration for drun mode
+# This file can be used for custom menu entries if needed
+
+# Example custom entries (uncomment to use):
+# terminal=kitty
+# file-manager=nemo
+# browser=chromium
+# editor=code
+# calculator=gnome-calculator
+# settings=gnome-control-center
